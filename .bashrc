@@ -13,3 +13,6 @@ alias ls='ls --group-directories-first --color=auto'
 alias ll='ls --group-directories-first --color=auto -l'
 alias la='ls --group-directories-first --color=auto -Al'
 alias cpp='g++ -std=c++17 -Wall -Wextra -pedantic -fmax-errors=2'
+
+# Load custom functions
+source .functions

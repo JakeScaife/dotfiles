@@ -1,0 +1,4 @@
+# Function to open firefox in the background and silence warnings
+firefox() {
+    /usr/bin/firefox $1 &> /dev/null &
+}
