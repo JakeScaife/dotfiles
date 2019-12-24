@@ -5,5 +5,6 @@
     name = "Jake Scaife"
     email = "jakescaife@pm.me"
 [alias]
+    s = status -s
     l = log --oneline
     lg = log --oneline --graph --decorate
