@@ -8,7 +8,7 @@ export VISUAL='vim'
 export EDITOR=$VISUAL
 
 # Custom aliases
-alias dotfiles='/usr/bin/git --git-dir=$HOME/GitHub/dotfiles/ --work-tree=$HOME'
+alias df='/usr/bin/git --git-dir=$HOME/GitHub/dotfiles/ --work-tree=$HOME'
 alias ls='ls --group-directories-first --color=auto'
 alias ll='ls --group-directories-first --color=auto -l'
 alias la='ls --group-directories-first --color=auto -Al'
