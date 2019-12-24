@@ -1,0 +1,9 @@
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+[user]
+    name = "Jake Scaife"
+    email = "jakescaife@pm.me"
+[alias]
+    l = log --oneline
+    lg = log --oneline --graph --decorate
