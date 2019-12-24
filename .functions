@@ -2,3 +2,16 @@
 firefox() {
     /usr/bin/firefox $1 &> /dev/null &
 }
+
+# Fast access to GitHub repos stored in ~/GitHub/
+gh() {
+    if [ $# -eq 0 ]; then
+        cd ~/GitHub/
+        ls
+    elif [ $# -eq 2 ] && [ "$1" = "clone" ]
+    then
+        git clone git@github.com:jakescaife/$2.git ~/GitHub/$2
+    else
+        cd ~/GitHub/$1
+    fi
+}
