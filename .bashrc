@@ -12,7 +12,7 @@ alias df='/usr/bin/git --git-dir=$HOME/GitHub/dotfiles/ --work-tree=$HOME'
 alias ls='ls --group-directories-first --color=auto'
 alias ll='ls --group-directories-first --color=auto -l'
 alias la='ls --group-directories-first --color=auto -Al'
-alias cpp='g++ -std=c++17 -Wall -Wextra -pedantic -fmax-errors=2'
+alias cpp='2>&1 g++ -std=c++17 -fdiagnostics-color=always -Wall -Wextra -pedantic'
 
 # Load custom functions
 source ~/.functions
