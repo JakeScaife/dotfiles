@@ -6,10 +6,10 @@ filetype off
 " Exit insert mode with jj
 map! jj <Esc>
 
-" Set the indentation to four spaces - tabs are expanded.
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+" Set the indentation to two spaces - tabs are expanded.
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 
 " Enable automatic indenting
