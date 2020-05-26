@@ -1,4 +1,4 @@
-" Basic setup: disable vi bindings and set encoding.
+" Basic setup: disable vi bindings and set encoding
 set nocompatible
 set encoding=utf-8
 filetype off
@@ -6,7 +6,10 @@ filetype off
 " Exit insert mode with jj
 map! jj <Esc>
 
-" Set the indentation to two spaces - tabs are expanded.
+" Custom commands
+command T below terminal ++rows=10
+
+" Set the indentation to two spaces - tabs are expanded
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -18,16 +21,16 @@ filetype plugin indent on
 " Disable line wrapping
 set nowrap
 
-" Display whitespace characters.
+" Display whitespace characters
 set list
 set listchars=tab:•\ ,trail:•,extends:»,precedes:«
 
-" Display line numbers, remove tildes.
+" Display line numbers, remove tildes
 set number
 highlight LineNr ctermfg=darkgrey
 highlight EndOfBuffer ctermfg=black
 
-" Enable syntax highlighting with terminal colours.
+" Enable syntax highlighting with terminal colours
 set t_Co=16
 syntax enable
 
