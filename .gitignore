@@ -4,3 +4,7 @@
 # Compiler outputs
 *.o
 *.out
+
+# Rust projects
+*/target/
+*.lock
