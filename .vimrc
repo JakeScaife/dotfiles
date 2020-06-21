@@ -6,8 +6,9 @@ filetype off
 " Exit insert mode with jj
 map! jj <Esc>
 
-" Custom commands
+" Display shell with :T and terminal mode with CTRL+B
 command T below terminal ++rows=10
+tnoremap <c-b> <c-\><c-n>
 
 " Set the indentation to two spaces - tabs are expanded
 set tabstop=2
