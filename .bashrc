@@ -13,6 +13,7 @@ alias ls='ls --group-directories-first --color=auto'
 alias ll='ls --group-directories-first --color=auto -l'
 alias la='ls --group-directories-first --color=auto -Al'
 alias cc='clang++ -std=c++17 -fcolor-diagnostics -Wall -Wextra -pedantic'
+alias cb='cargo run --bin'
 
 # Load custom functions
 source ~/.functions
