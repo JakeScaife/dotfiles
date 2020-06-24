@@ -6,5 +6,5 @@
 *.out
 
 # Rust projects
-*/target/
+target/
 *.lock
