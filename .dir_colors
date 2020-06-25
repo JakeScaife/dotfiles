@@ -1,0 +1,14 @@
+TERM linux
+TERM xterm-256color
+
+RESET 0
+DIR 01;34
+LINK target
+EXEC 01;32
+
+# Document files
+.md 00;32
+.txt 00;32
+
+# Source files
+.rs 00;33
