@@ -7,7 +7,7 @@
 eval $(dircolors -b ~/.dir_colors)
 
 # Customise bash prompt
-PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+PS1='\[\033[00;32m\][\u@\h\[\033[00;37m\] \W\[\033[00;32m\]]\$\[\033[00m\] '
 
 # Set default editor to vim
 export VISUAL='vim'
