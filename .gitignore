@@ -1,10 +1,13 @@
-# Temporary files
+# Temporary Files
 .*.swp
 
-# Compiler outputs
+# Compiler Outputs
 *.o
 *.out
 
-# Rust projects
+# Rust Projects
 target/
 *.lock
+
+# Media Files
+*.ppm
