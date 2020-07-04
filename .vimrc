@@ -11,9 +11,9 @@ command T below terminal ++rows=10
 tnoremap <c-b> <c-\><c-n>
 
 " Set the indentation to two spaces - tabs are expanded
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 " Enable automatic indenting
