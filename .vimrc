@@ -10,6 +10,9 @@ map! jj <Esc>
 command T below terminal ++rows=10
 tnoremap <c-b> <c-\><c-n>
 
+" Simple buffer switching with F5
+:nnoremap <F5> :buffers<CR>:buffer<Space>
+
 " Set the indentation to two spaces - tabs are expanded
 set tabstop=4
 set softtabstop=4
