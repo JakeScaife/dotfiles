@@ -3,8 +3,9 @@
 # Return if we are not in an interactive shell
 [[ $- != *i* ]] && return
 
-# Use Vi bindings in bash
+# Use Vi bindings in bash and bring back ctrl+l
 set -o vi
+bind -m vi-insert "\C-l":clear-screen
 
 # Load command colours (requires dircolors)
 eval $(dircolors -b ~/.dir_colors)
