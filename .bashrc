@@ -3,6 +3,9 @@
 # Return if we are not in an interactive shell
 [[ $- != *i* ]] && return
 
+# Use Vi bindings in bash
+set -o vi
+
 # Load command colours (requires dircolors)
 eval $(dircolors -b ~/.dir_colors)
 
