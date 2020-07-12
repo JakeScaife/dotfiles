@@ -22,6 +22,8 @@ set expandtab
 " Enable automatic indenting
 filetype plugin indent on
 
+" Disable automatic commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Disable line wrapping
 set nowrap
 
