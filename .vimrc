@@ -6,6 +6,9 @@ filetype off
 " Exit insert mode with jj
 map! jj <Esc>
 
+" Automatically close new block
+inoremap {<CR> {<CR>}<Esc>O
+
 " Display shell with :T and terminal mode with CTRL+B
 command T below terminal ++rows=10
 tnoremap <c-b> <c-\><c-n>
