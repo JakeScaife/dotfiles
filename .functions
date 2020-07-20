@@ -1,12 +1,26 @@
+RED="\033[0;31m"
+BLUE="\033[1;94m"
+GREEN="\033[1;32m"
+BG="\033[0m"
+
 projects() {
-    project_folders=(~/GitHub/*)
+    while :; do
+        projects=(~/GitHub/*)
+        for ((i=0; i < ${#projects[@]}; i++)); do
+            name=$(basename ${projects[$i]})
+            item=$(printf "%02d" $(($i + 1)))
+            echo -e "$RED$item. $BLUE$name$BG"
+        done
 
-    for ((iter=0; iter<${#project_folders[@]}; iter++)); do
-        short_name=$(basename ${project_folders[$iter]})
-        item_number=$(printf "%02d" $(($iter + 1)))
-        echo -e "\033[0;31m$item_number.\033[0m \033[1;94m$short_name\033[0m"
+        read input
+        if [[ $input == *"cl"* ]]; then
+            name=${input#cl }
+            git clone -q git@github.com:jakescaife/$name.git ~/GitHub/$name
+            echo -e "$GREEN$name cloned.$BG"
+        else
+            number=$(($input - 1))
+            cd ${projects[$number]}
+            break
+        fi
     done
-
-    read -rsn2 input
-    cd "${project_folders[$(($input - 1))]}"
 }
