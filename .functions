@@ -3,7 +3,7 @@ BLUE="\033[1;94m"
 GREEN="\033[1;32m"
 BG="\033[0m"
 
-projects() {
+pr() {
     while :; do
         projects=(~/GitHub/*)
         for ((i=0; i < ${#projects[@]}; i++)); do
