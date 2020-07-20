@@ -1,12 +1,12 @@
-# Fast access to GitHub repos stored in ~/GitHub/
-gh() {
-    if [ $# -eq 0 ]; then
-        cd ~/GitHub/
-        ls
-    elif [ $# -eq 2 ] && [ "$1" = "clone" ]
-    then
-        git clone git@github.com:jakescaife/$2.git ~/GitHub/$2
-    else
-        cd ~/GitHub/$1
-    fi
+projects() {
+    project_folders=(~/GitHub/*)
+
+    for ((iter=0; iter<${#project_folders[@]}; iter++)); do
+        short_name=$(basename ${project_folders[$iter]})
+        item_number=$(printf "%02d" $(($iter + 1)))
+        echo -e "\033[0;31m$item_number.\033[0m \033[1;94m$short_name\033[0m"
+    done
+
+    read -rsn2 input
+    cd "${project_folders[$(($input - 1))]}"
 }
