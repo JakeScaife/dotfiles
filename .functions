@@ -17,6 +17,10 @@ projects() {
             name=${input#cl }
             git clone -q git@github.com:jakescaife/$name.git ~/GitHub/$name
             echo -e "$GREEN$name cloned.$BG"
+        elif [[ $input == *"rm"*    ]]; then
+            number=$((${input#rm } - 1))
+            rm -rf ${projects[$number]}
+            echo -e "$GREEN$(basename ${projects[$number]}) deleted.$BG"
         else
             number=$(($input - 1))
             cd ${projects[$number]}
