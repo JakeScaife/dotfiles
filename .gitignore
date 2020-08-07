@@ -5,11 +5,8 @@
 *.o
 *.out
 
-# Rust Projects
+# Output Folders
 target/
-*.lock
-
-# Node Projects
 node_modules/
 
 # Media Files
