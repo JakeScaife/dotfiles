@@ -1,6 +1,7 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore
+    autocrlf = false
 [user]
     name = "Jake Scaife"
     email = "jakescaife@pm.me"
