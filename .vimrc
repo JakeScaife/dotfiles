@@ -3,6 +3,9 @@ set nocompatible
 set encoding=utf-8
 filetype off
 
+" Disable error beeps and flashes
+set noeb vb t_vb=
+
 " Exit insert mode with jj
 map! jj <Esc>
 
