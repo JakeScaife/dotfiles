@@ -25,6 +25,7 @@ alias la='ls --group-directories-first --color=auto -Al'
 alias cl='cargo clippy'
 alias cf='cargo fmt'
 alias cfc='cargo fmt -- --check'
+alias cn='cargo clean'
 
 # Confirm before overwriting
 alias cp='cp -i'
