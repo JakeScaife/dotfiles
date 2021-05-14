@@ -1,13 +1,8 @@
 # Temporary Files
 .*.swp
 
-# Compiler Outputs
-*.o
-*.out
-
 # Output Folders
 target/
-node_modules/
 
 # Media Files
 *.ppm

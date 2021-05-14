@@ -22,10 +22,6 @@ alias df='git --git-dir=$HOME/GitHub/dotfiles/ --work-tree=$HOME'
 alias ls='ls --group-directories-first --color=auto'
 alias ll='ls --group-directories-first --color=auto -l'
 alias la='ls --group-directories-first --color=auto -Al'
-alias cl='cargo clippy'
-alias cf='cargo fmt'
-alias cfc='cargo fmt -- --check'
-alias cn='cargo clean'
 
 # Confirm before overwriting
 alias cp='cp -i'

@@ -8,4 +8,3 @@
 [alias]
     s = status -s
     l = log --oneline
-    lg = log --oneline --graph --decorate
