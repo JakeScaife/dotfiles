@@ -32,4 +32,4 @@ highlight PmenuSel ctermfg=7 ctermbg=8
 highlight StatusLine ctermfg=1 ctermbg=0 cterm=standout
 highlight StatusLineNC ctermfg=1 ctermbg=0 cterm=reverse
 highlight VertSplit ctermfg=1 ctermbg=1
-highlight WildMenu ctermfg=7 ctermbg=1 cterm=underline
+highlight WildMenu ctermfg=7 ctermbg=1
