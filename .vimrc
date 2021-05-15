@@ -33,7 +33,7 @@ set wildmenu
 set wildmode=longest:full,full
 
 " Customise status line, hide file description on open
-set statusline=\ %t\ %m%=\ %y\ %p%%\ %l:%c\  
+set statusline=\ %t%=%y%m\ %p%%\ %l:%c\  
 set showcmd
 set shortmess=F
 set laststatus=2
