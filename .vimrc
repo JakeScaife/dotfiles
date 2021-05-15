@@ -36,3 +36,4 @@ set wildmode=longest:full,full
 set statusline=\ %t\ %m%=\ %y\ %p%%\ %l:%c\  
 set showcmd
 set shortmess=F
+set laststatus=2
