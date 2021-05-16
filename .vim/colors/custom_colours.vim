@@ -18,6 +18,7 @@ highlight Underlined ctermfg=12 term=underline
 highlight Ignore ctermfg=0
 highlight Error ctermfg=0 ctermbg=9 term=standout
 highlight Todo  ctermfg=0 ctermbg=11 term=standout
+highlight Title ctermfg=10
 
 " Line numbers, tildes and special keys
 highlight LineNr ctermfg=8
